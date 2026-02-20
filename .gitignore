@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# RL experiment artifacts
+experiments/runs/**
+!experiments/runs/.gitkeep
+papers/*/experiments/logs/**
+!papers/_template/experiments/logs/.gitkeep
+papers/*/experiments/checkpoints/**
+!papers/_template/experiments/checkpoints/.gitkeep
