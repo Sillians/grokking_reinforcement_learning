@@ -1,4 +1,5 @@
 # Proximal Policy Optimization (PPO): Deep Dive
+PPO (baseline RL algorithm used in many RLHF setups).
 
 Paper: **Proximal Policy Optimization Algorithms**  
 Authors: **John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov (OpenAI)**  
@@ -133,9 +134,7 @@ $$L_t^{CLIP+VF+S}(\theta)=\hat{\mathbb E}_t\left[L_t^{CLIP}(\theta)-c_1L_t^{VF}(
 
 Where:
 - $(L_t^{VF}(\theta)=(V_\theta(s_t)-V_t^{targ})^2)$: value regression loss.
-
-- $(S[\pi_\theta](s_t))$: entropy bonus (encourages exploration).
-
+- $`(S[\pi_\theta](s_t))`$: entropy bonus (encourages exploration).
 - $(c_1, c_2)$: tradeoff coefficients.
 
 
